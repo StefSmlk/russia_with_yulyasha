@@ -1,0 +1,48 @@
+body {
+    background-image: url('../images/st-petersburg-russia-1034319_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.margin-left {
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.square {
+    width: auto;
+    height: 180px;
+    background-color: rgba(100, 100, 100, 0.5);
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 770px){
+    .square {
+        display: none;
+    }
+}
+
+.frame {
+    width: auto;
+    height: 180px;
+    background-color: rgba(163, 146, 127, 0.5);
+}
+
+.my-video {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 850px;
+    height: 500px;
+}
+
+.card {
+    margin-top: 80px;
+}
+
+.transform {
+    height: 440px;
+    width: 660px;
+    position: center;
+}
