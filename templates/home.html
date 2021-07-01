@@ -4,6 +4,20 @@
     Home Page
 {% endblock %}
 {% block content %}
+    <div class="container div-stripe text-center">
+        <div class="container-style">
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+            <span class="span-stripe"></span>
+        </div>
+    </div>
+    <h1 class="text-center h1-style fst-italic">The Latest News:</h1>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
@@ -101,23 +115,6 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        let list = document.getElementsByClassName('square')
-        let anotherList = document.getElementsByClassName('carousel-caption')
-        for (let i = 0; i<list.length; i++){
-            list[i].addEventListener('mouseenter', function () {
-                this.classList.add('frame')
-            })
-            anotherList[i].addEventListener('mouseenter', function () {
-                list[i].classList.add('frame')
-            })
-            list[i].addEventListener('mouseleave', function () {
-                this.classList.remove('frame')
-            })
-            anotherList[i].addEventListener('mouseleave', function () {
-                list[i].classList.remove('frame')
-            })
-        }
-    </script>
+    <script src="{% static 'JS/javaScript.js' %}"></script>
 
 {% endblock %}

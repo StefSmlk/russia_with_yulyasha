@@ -15,7 +15,6 @@ body {
     width: auto;
     height: 220px;
     background-color: rgba(100, 100, 100, 0.5);
-    margin-top: 100px;
 }
 
 @media screen and (max-width: 770px){
@@ -56,6 +55,7 @@ body {
 .transform {
     transition: 1s;
    }
+
 .transform:hover {
     transform: scale(2);
    }
@@ -66,4 +66,81 @@ body {
 
 .blue {
     color: aqua;
+}
+
+.h1-style {
+    margin-top: 100px;
+    color: white;
+}
+
+.circle {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    transition: 1s;
+}
+
+.emergence {
+    font-size: 0;
+    transition: 1s;
+    color: darkorchid;
+}
+
+span.navbar-brand:hover span.emergence  {
+    font-size: 30px;
+}
+
+span.navbar-brand:hover img.circle  {
+    transform: scale(2);
+}
+
+.container-style {
+    display: flex;
+}
+
+.div-stripe {
+    margin-top: 100px;
+    width: 900px;
+}
+.span-stripe {
+    display: block;
+    width: 100px;
+    height: 520px;
+    background: url("../images/russia-1454933_1920.jpg");
+    transition: 1s ease;
+    background-size: cover;
+}
+span:nth-child(1) {
+    background-position: 0 0;
+}
+span:nth-child(2) {
+    background-position: -100px 0;
+}
+span:nth-child(3) {
+    background-position: -200px 0;
+}
+span:nth-child(4) {
+    background-position: -300px 0;
+}
+span:nth-child(5) {
+    background-position: -400px 0;
+}
+span:nth-child(6) {
+    background-position: -500px 0;
+}
+span:nth-child(7) {
+    background-position: -600px 0;
+}
+span:nth-child(8) {
+    background-position: -700px 0;
+}
+span:nth-child(9) {
+    background-position: -800px 0;
+}
+.span-stripe-em {
+    margin: 0 4em;
 }

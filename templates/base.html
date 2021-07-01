@@ -18,7 +18,7 @@
   <body>
     <nav class="container navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" style="font-size: 30px" href="#">Russian with Yulyasha</a>
+        <span class="navbar-brand text-center"><img src="{% static 'images/log.png' %}" class="circle" alt="...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="emergence fst-italic">Russian with Yulyasha</span></span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,16 +30,8 @@
             <li class="nav-item">
               <a class="nav-link margin-left" href="#">About Us</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle margin-left" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Content
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Video</a></li>
-                <li><a class="dropdown-item" href="#">Photo</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else</a></li>
-              </ul>
+              <li class="nav-item">
+              <a class="nav-link margin-left" href="{% url 'learning' %}">Learning</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -66,7 +58,11 @@
                 </div>
                 <div class="col text-center">
                     <p class="d-block">Visit Us:</p>
-                    <p class="d-block"><i class="fab fa-instagram fa-2x">&nbsp;&nbsp;</i><i class="fab fa-youtube fa-2x">&nbsp;&nbsp;</i><i class="fab fa-vk fa-2x"></i></p>
+                    <p class="d-block">
+                        <a href="https://instagram.com/russia_wide?utm_medium=copy_link" class="text-decoration-none"><i class="fab fa-instagram fa-2x">&nbsp;&nbsp;</i></a>
+                        <a href="https://www.youtube.com/channel/UCrk2nNOje_qza0rrpJe5i0g" class="text-decoration-none"><i class="fab fa-youtube fa-2x">&nbsp;&nbsp;</i></a>
+                        <a href="https://vk.com/public201817013" class="text-decoration-none"><i class="fab fa-vk fa-2x"></i></a>
+                    </p>
                 </div>
             </div>
             <p class="lead text-center">Copyright &copy; 2021 SMLK</p>

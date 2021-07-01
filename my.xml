@@ -6,8 +6,50 @@
         <description>The Moscow Times offers everything you need to know about Russia: Breaking news, top stories, business, analysis, opinion, multimedia, upcoming cultural events</description>
         <atom:link rel="self" href="https://www.themoscowtimes.com/rss/news"></atom:link>
         <language>en-us</language>
-        <lastBuildDate>Wed, 30 Jun 2021 17:21:49 +0200</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jul 2021 13:25:04 +0200</lastBuildDate>
         <ttl>600</ttl>
+					<item>
+				<title>Russia Imposes Biometric, Drug Screening for Foreigners</title>
+				<link>https://www.themoscowtimes.com/2021/07/01/russia-imposes-biometric-drug-screening-for-foreigners-a74398</link>
+				<description>Foreigners coming to Russia for periods longer than three months will have to submit their fingerprints and other biometric data.</description>
+				<pubDate>Thu, 01 Jul 2021 12:45:32 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/01/russia-imposes-biometric-drug-screening-for-foreigners-a74398</guid>
+			</item>
+					<item>
+				<title>Skepticism to Acceptance: How Putin's Views on Climate Change Evolved Over the Years</title>
+				<link>https://www.themoscowtimes.com/2021/07/01/skepticism-to-acceptance-how-putins-views-on-climate-change-evolved-over-the-years-a74391</link>
+				<description>Despite eventually accepting that climate change is a threat, Putin is still reluctant to support drastic economic changes recommended by the UN.</description>
+				<pubDate>Thu, 01 Jul 2021 12:22:00 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/01/skepticism-to-acceptance-how-putins-views-on-climate-change-evolved-over-the-years-a74391</guid>
+			</item>
+					<item>
+				<title>Russia Posts Record Covid Deaths for Third Day Running</title>
+				<link>https://www.themoscowtimes.com/2021/07/01/russia-posts-record-covid-deaths-for-third-day-running-a74385</link>
+				<description>The daily death toll of 672 released Thursday topped Wednesday's record of 669 and Tuesday's of 652. </description>
+				<pubDate>Thu, 01 Jul 2021 11:16:00 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/01/russia-posts-record-covid-deaths-for-third-day-running-a74385</guid>
+			</item>
+					<item>
+				<title>Russia Races Tom Cruise and Musk for First Movie in Space</title>
+				<link>https://www.themoscowtimes.com/2021/07/01/russia-races-tom-cruise-and-musk-for-first-movie-in-space-a74394</link>
+				<description>One of Russia's most celebrated actresses, Yulia Peresild, is blasting off to the ISS with film director Klim Shipenko in October.</description>
+				<pubDate>Thu, 01 Jul 2021 09:54:00 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/01/russia-races-tom-cruise-and-musk-for-first-movie-in-space-a74394</guid>
+			</item>
+					<item>
+				<title>Russia Tags 4 Khodorkovsky-Linked NGOs ‘Undesirable’</title>
+				<link>https://www.themoscowtimes.com/2021/07/01/russia-tags-4-khodorkovsky-linked-ngos-undesirable-a74393</link>
+				<description>Another “undesirable” Khodorkovsky group, Open Russia, disbanded in May to avoid jail sentences for supporters.</description>
+				<pubDate>Thu, 01 Jul 2021 09:18:33 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/01/russia-tags-4-khodorkovsky-linked-ngos-undesirable-a74393</guid>
+			</item>
+					<item>
+				<title>Coronavirus in Russia: The Latest News | July 1</title>
+				<link>https://www.themoscowtimes.com/2021/07/01/coronavirus-in-russia-the-latest-news-july-1-a69117</link>
+				<description>Record-setting deaths. Moscow cases soar. Mandatory vaccination.</description>
+				<pubDate>Thu, 01 Jul 2021 08:12:00 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/01/coronavirus-in-russia-the-latest-news-july-1-a69117</guid>
+			</item>
 					<item>
 				<title>Putin's Phone-In Hit by 'Cyberattacks'</title>
 				<link>https://www.themoscowtimes.com/2021/06/30/putins-phone-in-hit-by-cyberattacks-a74390</link>
@@ -63,13 +105,6 @@
 				<description>Ukraine and 32 NATO members are carrying out the Sea Breeze 2021 drills involving 5,000 military personnel, 40 aircraft and 32 warships.</description>
 				<pubDate>Wed, 30 Jun 2021 09:01:41 +0200</pubDate>
 				<guid>https://www.themoscowtimes.com/2021/06/30/russia-wields-s-400-missile-systems-in-response-to-us-led-black-sea-drills-a74382</guid>
-			</item>
-					<item>
-				<title>Coronavirus in Russia: The Latest News | June 30</title>
-				<link>https://www.themoscowtimes.com/2021/06/30/coronavirus-in-russia-the-latest-news-june-30-a69117</link>
-				<description>Record-setting deaths. Moscow cases soar. Mandatory vaccination.</description>
-				<pubDate>Wed, 30 Jun 2021 08:12:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/30/coronavirus-in-russia-the-latest-news-june-30-a69117</guid>
 			</item>
 					<item>
 				<title>Russia Approves Roster of Neutral Athletes for Tokyo 2020</title>
@@ -322,41 +357,6 @@
 				<description>&quot;It was entirely right that we should vindicate the law and pursue freedom of navigation in the way that we did,&quot; Johnson said.</description>
 				<pubDate>Thu, 24 Jun 2021 15:11:05 +0200</pubDate>
 				<guid>https://www.themoscowtimes.com/2021/06/24/uks-pm-hits-back-at-russian-bear-in-warship-row-a74333</guid>
-			</item>
-					<item>
-				<title>EU Imposes New Sanctions on Belarus</title>
-				<link>https://www.themoscowtimes.com/2021/06/24/eu-imposes-new-sanctions-on-belarus-a74332</link>
-				<description>The package looks to hit key sources of revenue for Minsk after the forced landing of an airliner and arrest of a dissident journalist.</description>
-				<pubDate>Thu, 24 Jun 2021 15:07:27 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/24/eu-imposes-new-sanctions-on-belarus-a74332</guid>
-			</item>
-					<item>
-				<title>Russia's Daily Virus Cases, Deaths Hit 6-Month Highs</title>
-				<link>https://www.themoscowtimes.com/2021/06/24/russias-daily-virus-cases-deaths-hit-6-month-highs-a74327</link>
-				<description>Russia has several Covid-19 vaccines that have been available for free since early December, but its campaign to inoculate its population has lagged.</description>
-				<pubDate>Thu, 24 Jun 2021 14:30:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/24/russias-daily-virus-cases-deaths-hit-6-month-highs-a74327</guid>
-			</item>
-					<item>
-				<title>Rights Activists Dispute Russia’s UN Report on Navalny Protests</title>
-				<link>https://www.themoscowtimes.com/2021/06/24/rights-activists-dispute-russias-un-report-on-navalny-protests-a74313</link>
-				<description>Lawyers from the independent OVD-Info police monitor warned that Russia's report could “mislead” the international community.</description>
-				<pubDate>Thu, 24 Jun 2021 14:11:24 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/24/rights-activists-dispute-russias-un-report-on-navalny-protests-a74313</guid>
-			</item>
-					<item>
-				<title>Muscovites Flock to Vaccination Centers Amid Mandatory Jab Push  </title>
-				<link>https://www.themoscowtimes.com/2021/06/24/muscovites-flock-to-vaccination-centers-amid-mandatory-jab-push-a74325</link>
-				<description>The capital’s mayor decreed last week that most service workers must be fully vaccinated by Aug. 15. </description>
-				<pubDate>Thu, 24 Jun 2021 13:25:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/24/muscovites-flock-to-vaccination-centers-amid-mandatory-jab-push-a74325</guid>
-			</item>
-					<item>
-				<title>‘We Can Also Bomb Targets,’ Russia Warns After British Warship Encounter</title>
-				<link>https://www.themoscowtimes.com/2021/06/24/we-can-also-bomb-targets-russia-warns-after-british-warship-encounter-a74328</link>
-				<description>Moscow said it fired warning shots and dropped bombs on the ship's path near the coast of annexed Crimea, a claim London denies.</description>
-				<pubDate>Thu, 24 Jun 2021 13:08:27 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/24/we-can-also-bomb-targets-russia-warns-after-british-warship-encounter-a74328</guid>
 			</item>
 			</channel>
 </rss>
