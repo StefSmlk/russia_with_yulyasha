@@ -37,7 +37,7 @@ body {
 }
 
 .card {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .form {
@@ -143,4 +143,8 @@ span:nth-child(9) {
 }
 .span-stripe-em {
     margin: 0 4em;
+}
+
+.font-size {
+    font-size: 10px;
 }

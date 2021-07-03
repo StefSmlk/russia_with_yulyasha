@@ -25,13 +25,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link margin-left {% if '' in request.path %} active {% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
+              <a class="nav-link margin-left {% if 'home' in request.path %} active {% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link margin-left" href="#">About Us</a>
             </li>
-              <li class="nav-item">
-              <a class="nav-link margin-left" href="{% url 'learning' %}">Learning</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link margin-left dropdown-toggle {% if 'learning' in request.path %} active {% endif %}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Content
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{% url 'photo' %}">Photo</a></li>
+                <li><a class="dropdown-item" href="{% url 'video' %}">Video</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </li>
           </ul>
           <form class="d-flex">
