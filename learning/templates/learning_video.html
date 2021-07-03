@@ -10,11 +10,23 @@
             {% for object in video.all %}
               <div class="col">
                 <div class="card">
-                  <img src="{{ object.image.url }}" class="card-img-top" alt="...">
+                    <div class="container">
+                        <video class="my-video-2" controls="controls">
+                            <source src="{{ object.image.url }}" type="video/mp4">
+                        </video>
+                    </div>
                   <div class="card-body">
-                    <h5 class="card-title">{{ object.name }}</h5>
-                    <p class="card-text">{{ object.description }}</p>
-                    <p class="card-text">{{ object.date }}</p>
+                      <p class="card-text text-end font-size">{{ object.date }}</p>
+                    <h5 class="card-title text-center">{{ object.name }}</h5>
+                    <p class="card-text text-center">{{ object.description }}</p>
+                    <hr class="dropdown-divider">
+                      {% for item in comments.all %}
+                          {% ifequal object.name item.video_id %}
+                              <p>{{ item.text }}</p>
+                              <p class="text-end font-size">{{ item.date_comment }}</p>
+                          {% endifequal %}
+                      {% endfor %}
+                      <div class="text-end"><a href="{% url 'video_comments' object.id %}"><button class="btn btn-secondary">Add your comment</button></a></div>
                   </div>
                 </div>
               </div>

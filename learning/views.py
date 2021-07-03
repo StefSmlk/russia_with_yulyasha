@@ -29,3 +29,17 @@ def photo_comment_view(request, image_id):
     else:
         form = CommentsImageForm()
     return render(request, 'comment_photo.html', {'photo': context_photo, 'form': form})
+
+
+def video_comment_view(request, video_id):
+    context_video = BlogVideosModel.objects.get(pk=video_id)
+    if request.method == 'POST':
+        form = CommentsVideoForm(request.POST)
+        if form.is_valid():
+            new_form = form.save(commit=False)
+            new_form.video_id = context_video.name
+            new_form.save()
+            return HttpResponseRedirect('/learning/video')
+    else:
+        form = CommentsVideoForm()
+    return render(request, 'comment_video.html', {'video': context_video, 'form': form})

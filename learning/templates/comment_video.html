@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Learning Page
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <div class="card mb-3">
+          <div class="card-body">
+              <div class="container">
+                  <video class="my-video-2" controls="controls">
+                      <source src="{{ video.image.url }}" type="video/mp4">
+                  </video>
+              </div>
+              <div class="card-body">
+                  <p class="card-text text-end font-size">{{ video.date }}</p>
+                  <h5 class="card-title text-center">{{ video.name }}</h5>
+                  <p class="card-text text-center">{{ video.description }}</p>
+                  <form class="text-center" method="post">
+                      {% csrf_token %}
+                      <label>
+                          {{ form }}
+                      </label>
+                      <button class="btn btn-secondary" type="submit">submit</button>
+                  </form>
+              </div>
+          </div>
+        </div>
+    </div>
+
+{% endblock %}

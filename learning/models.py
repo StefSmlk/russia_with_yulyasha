@@ -25,11 +25,11 @@ class BlogImageModel(models.Model):
 
 class ImageCommentsModel(models.Model):
     image_id = models.TextField(default='')
-    text = models.TextField()
+    text = models.TextField(verbose_name='')
     date_comment = models.DateField(auto_now=True)
 
 
 class VideoCommentsModel(models.Model):
     video_id = models.TextField(default='')
-    text = models.TextField()
+    text = models.TextField(verbose_name='')
     date_comment = models.DateField(auto_now=True)
