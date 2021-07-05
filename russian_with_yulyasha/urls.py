@@ -20,10 +20,11 @@ from django.urls import path
 from learning.views import learning_view_video, learning_view_photo, photo_comment_view, video_comment_view, \
     video_delete_comment_view, photo_delete_comment_view
 from russian_with_yulyasha import settings
-from russian_with_yulyasha.views import home_view
+from russian_with_yulyasha.views import home_view, contacts_view
 
 urlpatterns = [
     path('home', home_view, name='home'),
+    path('contacts', contacts_view, name='contacts'),
     path('learning/video', learning_view_video, name='video'),
     path('learning/photo', learning_view_photo, name='photo'),
     path('learning/photo/<int:image_id>', photo_comment_view, name='photo_comments'),

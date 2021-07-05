@@ -3,21 +3,12 @@
 {% block title %}
     Home Page
 {% endblock %}
+{% block body %}
+    {% static 'images/st-petersburg-russia-1034319_1920.jpg' %}
+{% endblock %}
 {% block content %}
-{#    <div class="container div-stripe text-center">#}
-{#        <div class="container-style">#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#            <span class="span-stripe"></span>#}
-{#        </div>#}
-{#    </div>#}
-    <h1 class="text-center h1-style fst-italic">The Latest News:</h1>
+
+    <h1 class="text-center dis h1-style fst-italic">The Latest News:</h1>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
@@ -71,50 +62,130 @@
                 </div>
             </div>
         </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <div class="container text-center">
-        <iframe class="my-video" src="{% static 'video/Russian with Yulyasha. Lesson 1. Basic phrases and more!.mp4' %}">
-        </iframe>
+        <video controls class="my-video"
+               src="{% static 'video/Russian with Yulyasha. Lesson 1. Basic phrases and more!.mp4' %}">
+        </video>
     </div>
 
     <br>
     <br>
     <br>
 
-    <div class="container">
-        <div class="row justify-content-around">
-          <div class="col-4 text-center form">
-              <img src="{% static 'images/12.png' %}" class="img-card transform" alt="...">
-          </div>
-          <div class="col-4 text-center form">
-              <img src="{% static 'images/13.png' %}" class="img-card transform" alt="...">
+    <div class="container text-center">
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+                <a class="text-decoration-none" href="{% url 'photo' %}">
+                    <div class="row justify-content-between figure">
+                        <div class="col-md-5">
+                            <div class="div-stripe transform">
+                                <img width="300px" src="{% static 'images/laptop-4906312_1920.jpg' %}" alt="...">
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-5 inscription1">
+                            blog
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a class="text-decoration-none" href="{% url 'photo' %}">
+                    <div class="row justify-content-between figure">
+                        <div class="col-md-5">
+                            <div class="div-stripe transform">
+                                <img width="300px" src="{% static 'images/111.jpg' %}" alt="...">
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-5 inscription2">
+                            about me
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <div class="row justify-content-around">
-          <div class="col-4 text-center form">
-              <img src="{% static 'images/14.png' %}" class="img-card transform" alt="...">
-          </div>
-          <div class="col-4 text-center form">
-              <img src="{% static 'images/15.png' %}" class="img-card transform" alt="...">
-          </div>
-        </div>
     </div>
 
-    <script src="{% static 'JS/javaScript.js' %}"></script>
+    <br>
+    <br>
+    <br>
 
+    <div class="container text-center">
+        <a class="text-decoration-none" href="{% url 'photo' %}">
+            <div class="row justify-content-around figure">
+                <div class="col-md-5">
+                    <div class="container div-stripe transform">
+                        <img width="300px" src="{% static 'images/camera-801924_1920.jpg' %}" alt="...">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-5 inscription">
+                    photo
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container text-center">
+        <a class="text-decoration-none" href="{% url 'video' %}">
+            <div id="figure" class="row justify-content-around figure">
+                <div class="col-md-5">
+                    <div class="container div-stripe transform">
+                        <video muted preload="auto" id="vid" width="300px"
+                               src="{% static 'video/Sunrise - 7127.mp4' %}"></video>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-5 inscription">
+                    video
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container text-center">
+        <a class="text-decoration-none" href="{% url 'contacts' %}">
+            <div class="row justify-content-around figure">
+                <div class="col-md-5">
+                    <div class="container div-stripe transform">
+                        <img width="300px" src="{% static 'images/phone-690091_1920.jpg' %}" alt="...">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-5 inscription">
+                    contacts
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="{% static 'JS/javaScript.js' %}"></script>
 {% endblock %}

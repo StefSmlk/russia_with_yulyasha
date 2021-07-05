@@ -3,6 +3,9 @@
 {% block title %}
     Photo Page
 {% endblock %}
+{% block body %}
+    {% static 'images/camera-188083_1920.jpg' %}
+{% endblock %}
 {% block content %}
 
     <div class="container">
@@ -10,7 +13,7 @@
             {% for object in photo.all %}
               <div class="col">
                 <div class="card card-back">
-                  <img src="{{ object.image.url }}" class="card-img-top" alt="...">
+                    <a class="text-decoration-none" href="{% url 'photo_comments' object.id %}"><img src="{{ object.image.url }}" class="card-img-top" alt="..."></a>
                   <div class="card-body text-white">
                       <p class="card-text text-end font-size">{{ object.date }}</p>
                     <h5 class="card-title text-center">{{ object.name }}</h5>

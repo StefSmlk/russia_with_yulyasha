@@ -1,9 +1,12 @@
 body {
-    background-image: url('../images/st-petersburg-russia-1034319_1920.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+}
+
+.container {
+    border-radius: 5px;
 }
 
 .margin-left {
@@ -23,10 +26,17 @@ body {
     }
 }
 
+@media screen and (max-width: 770px){
+    .dis {
+        display: none;
+    }
+}
+
 .frame {
     width: auto;
     height: 220px;
     background-color: rgba(163, 146, 127, 0.5);
+    transition: 1s;
 }
 
 .my-video {
@@ -62,8 +72,8 @@ body {
     transition: 1s;
    }
 
-.transform:hover {
-    transform: scale(2);
+.figure:hover .transform {
+    transform: scale(1.2);
    }
 
 .text-decoration-none {
@@ -93,30 +103,32 @@ body {
 .emergence {
     font-size: 0;
     transition: 1s;
-    color: darkorchid;
+    color: bisque;
 }
 
 span.navbar-brand:hover span.emergence  {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 span.navbar-brand:hover img.circle  {
     transform: scale(2);
 }
 
-.container-style {
-    display: flex;
+.div-stripe {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 350px;
 }
 
-/*.div-stripe {*/
-/*    margin-top: 100px;*/
-/*    width: 900px;*/
+/*.container-style {*/
+/*    display: flex;*/
 /*}*/
+
 /*.span-stripe {*/
 /*    display: block;*/
-/*    width: 100px;*/
-/*    height: 520px;*/
-/*    background: url("../images/russia-1454933_1920.jpg");*/
+/*    width: 300px;*/
+/*    height: 200px;*/
+/*    background: url("../images/moscow-2742642_1920.jpg") no-repeat;*/
 /*    transition: 1s ease;*/
 /*    background-size: cover;*/
 /*}*/
@@ -124,31 +136,23 @@ span.navbar-brand:hover img.circle  {
 /*    background-position: 0 0;*/
 /*}*/
 /*span:nth-child(2) {*/
-/*    background-position: -100px 0;*/
+/*    background-position: -50px 0;*/
 /*}*/
 /*span:nth-child(3) {*/
-/*    background-position: -200px 0;*/
+/*    background-position: -100px 0;*/
 /*}*/
 /*span:nth-child(4) {*/
-/*    background-position: -300px 0;*/
+/*    background-position: -150px 0;*/
 /*}*/
 /*span:nth-child(5) {*/
-/*    background-position: -400px 0;*/
+/*    background-position: -200px 0;*/
 /*}*/
 /*span:nth-child(6) {*/
-/*    background-position: -500px 0;*/
+/*    background-position: -250px 0;*/
 /*}*/
-/*span:nth-child(7) {*/
-/*    background-position: -600px 0;*/
-/*}*/
-/*span:nth-child(8) {*/
-/*    background-position: -700px 0;*/
-/*}*/
-/*span:nth-child(9) {*/
-/*    background-position: -800px 0;*/
-/*}*/
-/*.span-stripe-em {*/
-/*    margin: 0 4em;*/
+/*.figure:hover span {*/
+/*    margin: 0 0.5em;*/
+/*    transform: rotate(10deg);*/
 /*}*/
 
 .font-size {
@@ -157,4 +161,62 @@ span.navbar-brand:hover img.circle  {
 
 .card-back {
     background-color: rgba(100, 100, 100, 0.7);
+}
+
+.figure {
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+}
+
+.figure:hover {
+    background-color: rgba(163, 146, 127, 0.5);
+    transition: 1s;
+}
+
+.inscription {
+    margin-top: 60px;
+    transition: 1s;
+    font-size: 100px;
+    color: bisque;
+}
+
+.inscription1 {
+    margin-top: 60px;
+    transition: 1s;
+    font-size: 80px;
+    color: bisque;
+}
+
+.inscription2 {
+    transition: 1s;
+    font-size: 80px;
+    color: bisque;
+    line-height: 120px;
+}
+
+
+.figure:hover .inscription {
+    color: cornflowerblue;
+    transform: scale(1.2);
+}
+.figure:hover .inscription1 {
+    color: cornflowerblue;
+    transform: scale(1.2);
+}
+.figure:hover .inscription2 {
+    color: cornflowerblue;
+    transform: scale(1.2);
+}
+
+.text-contacts {
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+a {
+    transition: 1s;
+}
+
+.m-t {
+    margin-top: 300px;
 }
