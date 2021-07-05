@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
-    Learning Page
+    Video Page
 {% endblock %}
 {% block content %}
 
@@ -9,20 +9,20 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
             {% for object in video.all %}
               <div class="col">
-                <div class="card">
+                <div class="card card-back">
                     <div class="container">
                         <video class="my-video-2" controls="controls">
                             <source src="{{ object.image.url }}" type="video/mp4">
                         </video>
                     </div>
-                  <div class="card-body">
+                  <div class="card-body text-white">
                       <p class="card-text text-end font-size">{{ object.date }}</p>
                     <h5 class="card-title text-center">{{ object.name }}</h5>
                     <p class="card-text text-center">{{ object.description }}</p>
                     <hr class="dropdown-divider">
                       {% for item in comments.all %}
                           {% ifequal object.name item.video_id %}
-                              <p>{{ item.text }}</p>
+                              <p class="blue">{{ item.text }} {% if user.is_authenticated %} <span class="text-end"><a href="{% url 'video_comments_delete' item.id %}"> delete </a> </span> {% endif %} </p>
                               <p class="text-end font-size">{{ item.date_comment }}</p>
                           {% endifequal %}
                       {% endfor %}

@@ -6,8 +6,22 @@
         <description>The Moscow Times offers everything you need to know about Russia: Breaking news, top stories, business, analysis, opinion, multimedia, upcoming cultural events</description>
         <atom:link rel="self" href="https://www.themoscowtimes.com/rss/news"></atom:link>
         <language>en-us</language>
-        <lastBuildDate>Sat, 03 Jul 2021 17:43:19 +0200</lastBuildDate>
+        <lastBuildDate>Sun, 04 Jul 2021 18:07:05 +0200</lastBuildDate>
         <ttl>600</ttl>
+					<item>
+				<title>Russia Posts Highest Number of Virus Cases Since Early January</title>
+				<link>https://www.themoscowtimes.com/2021/07/04/russia-posts-highest-number-of-virus-cases-since-early-january-a74420</link>
+				<description>Russia on Sunday announced 25,142 new infections, the highest figure since January 2 when Russia was emerging from a second wave of the pandemic.</description>
+				<pubDate>Sun, 04 Jul 2021 13:00:03 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/04/russia-posts-highest-number-of-virus-cases-since-early-january-a74420</guid>
+			</item>
+					<item>
+				<title>Russian Law Takes Fizz Out of French Champagne Supplies</title>
+				<link>https://www.themoscowtimes.com/2021/07/03/russian-law-takes-fizz-out-of-french-champagne-supplies-a74419</link>
+				<description>Russian elites could soon find themselves without their favorite French bubbles if Moet Hennessy makes good on a threat to halt champagne supplies following a new law signed by President Vladimir Putin.</description>
+				<pubDate>Sat, 03 Jul 2021 22:11:23 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/03/russian-law-takes-fizz-out-of-french-champagne-supplies-a74419</guid>
+			</item>
 					<item>
 				<title>Former French PM Fillon Joins Russian Oil Company Board</title>
 				<link>https://www.themoscowtimes.com/2021/07/03/former-french-pm-fillon-joins-russian-oil-company-board-a74418</link>
@@ -23,11 +37,11 @@
 				<guid>https://www.themoscowtimes.com/2021/07/03/russia-reports-record-covid-deaths-for-fifth-straight-day-a74417</guid>
 			</item>
 					<item>
-				<title>Coronavirus in Russia: The Latest News | July 3</title>
-				<link>https://www.themoscowtimes.com/2021/07/03/coronavirus-in-russia-the-latest-news-july-2-a69117</link>
+				<title>Coronavirus in Russia: The Latest News | July 4</title>
+				<link>https://www.themoscowtimes.com/2021/07/03/coronavirus-in-russia-the-latest-news-july-4-a69117</link>
 				<description>Record-setting deaths. Moscow cases soar. Mandatory vaccination.</description>
 				<pubDate>Sat, 03 Jul 2021 10:15:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/07/03/coronavirus-in-russia-the-latest-news-july-2-a69117</guid>
+				<guid>https://www.themoscowtimes.com/2021/07/03/coronavirus-in-russia-the-latest-news-july-4-a69117</guid>
 			</item>
 					<item>
 				<title>Arctic Ocean’s ‘Last Ice Area’ Disappearing Faster Than Expected – Study</title>
@@ -343,20 +357,6 @@
 				<description>Delta spread. U.S. visa services suspended. Vaccine shortages.</description>
 				<pubDate>Mon, 28 Jun 2021 09:01:00 +0200</pubDate>
 				<guid>https://www.themoscowtimes.com/2021/06/28/news-from-russia-what-you-missed-over-the-weekend-117-a74352</guid>
-			</item>
-					<item>
-				<title>St. Petersburg Posts Record Covid Toll Following Euro 2020</title>
-				<link>https://www.themoscowtimes.com/2021/06/26/st-petersburg-posts-record-covid-toll-following-euro-2020-a74351</link>
-				<description>Russia has seen an explosion of new coronavirus cases since mid-June.</description>
-				<pubDate>Sat, 26 Jun 2021 12:41:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/26/st-petersburg-posts-record-covid-toll-following-euro-2020-a74351</guid>
-			</item>
-					<item>
-				<title>Russian Vaccine Skeptics Rush to Buy Fake Covid Jab Certificates</title>
-				<link>https://www.themoscowtimes.com/2021/06/25/russian-vaccine-skeptics-rush-to-buy-fake-covid-jab-certificates-a74348</link>
-				<description>Dozens of dealers claim to sell fake certificates and even falsified registration on the government vaccination database.</description>
-				<pubDate>Fri, 25 Jun 2021 15:37:08 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/25/russian-vaccine-skeptics-rush-to-buy-fake-covid-jab-certificates-a74348</guid>
 			</item>
 			</channel>
 </rss>

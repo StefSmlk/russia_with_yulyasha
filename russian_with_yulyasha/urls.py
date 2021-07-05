@@ -17,7 +17,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from learning.views import learning_view_video, learning_view_photo, photo_comment_view, video_comment_view
+from learning.views import learning_view_video, learning_view_photo, photo_comment_view, video_comment_view, \
+    video_delete_comment_view, photo_delete_comment_view
 from russian_with_yulyasha import settings
 from russian_with_yulyasha.views import home_view
 
@@ -27,6 +28,8 @@ urlpatterns = [
     path('learning/photo', learning_view_photo, name='photo'),
     path('learning/photo/<int:image_id>', photo_comment_view, name='photo_comments'),
     path('learning/video/<int:video_id>', video_comment_view, name='video_comments'),
+    path('learning/video/delete/<int:comment_id>', video_delete_comment_view, name='video_comments_delete'),
+    path('learning/photo/delete/<int:comment_id>', photo_delete_comment_view, name='photo_comments_delete'),
     path('admin/', admin.site.urls),
 ]
 

@@ -43,3 +43,19 @@ def video_comment_view(request, video_id):
     else:
         form = CommentsVideoForm()
     return render(request, 'comment_video.html', {'video': context_video, 'form': form})
+
+
+def video_delete_comment_view(request, comment_id):
+    comment = VideoCommentsModel.objects.get(pk=comment_id)
+    if request.method == 'POST':
+        comment.delete()
+        return HttpResponseRedirect('/learning/video')
+    return render(request, 'video_comment_delete.html', {'comment': comment})
+
+
+def photo_delete_comment_view(request, comment_id):
+    comment = ImageCommentsModel.objects.get(pk=comment_id)
+    if request.method == 'POST':
+        comment.delete()
+        return HttpResponseRedirect('/learning/photo')
+    return render(request, 'photo_comment_delete.html', {'comment': comment})

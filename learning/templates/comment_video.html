@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
-    Learning Page
+    Comment video
 {% endblock %}
 {% block content %}
 
     <div class="container">
-        <div class="card mb-3">
+        <div class="card mb-3 card-back">
           <div class="card-body">
               <div class="container">
                   <video class="my-video-2" controls="controls">
                       <source src="{{ video.image.url }}" type="video/mp4">
                   </video>
               </div>
-              <div class="card-body">
+              <div class="card-body text-white">
                   <p class="card-text text-end font-size">{{ video.date }}</p>
                   <h5 class="card-title text-center">{{ video.name }}</h5>
                   <p class="card-text text-center">{{ video.description }}</p>

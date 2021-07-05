@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
-    Learning Page
+    Comment photo
 {% endblock %}
 {% block content %}
 
     <div class="container">
-        <div class="card mb-3">
+        <div class="card mb-3 card-back">
           <img src="{{ photo.image.url }}" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body text-white">
               <p class="card-text text-end font-size">{{ photo.date }}</p>
               <h5 class="card-title text-center">{{ photo.name }}</h5>
               <p class="card-text text-center">{{ photo.description }}</p>

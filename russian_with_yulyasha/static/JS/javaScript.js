@@ -16,9 +16,9 @@ for (let i = 0; i<list.length; i++){
 }
 
 
-let emList = document.getElementsByTagName('span')
-setInterval(function () {
-    for (let i=2; i<11; i++){
-        emList[i].classList.toggle('span-stripe-em')
-    }
-}, 5000)
+// let emList = document.getElementsByTagName('span')
+// setInterval(function () {
+//     for (let i=2; i<11; i++){
+//         emList[i].classList.toggle('span-stripe-em')
+//     }
+// }, 5000)
