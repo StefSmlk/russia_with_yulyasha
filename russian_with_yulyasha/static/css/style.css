@@ -20,6 +20,12 @@ body {
     background-color: rgba(100, 100, 100, 0.5);
 }
 
+@media screen and (max-width: 990px) {
+    .col-lg-6 {
+        margin-top: 70px;
+    }
+}
+
 @media screen and (max-width: 770px){
     .square {
         display: none;
@@ -80,10 +86,6 @@ body {
     color: white;
 }
 
-.blue {
-    color: aqua;
-}
-
 .h1-style {
     margin-top: 100px;
     color: white;
@@ -101,17 +103,18 @@ body {
 }
 
 .emergence {
-    font-size: 0;
-    transition: 1s;
-    color: bisque;
-}
-
-span.navbar-brand:hover span.emergence  {
+    opacity: 0;
+    transition: 1.5s;
     font-size: 25px;
+    animation: text 5s infinite;
 }
 
 span.navbar-brand:hover img.circle  {
     transform: scale(2);
+}
+
+span.navbar-brand:hover .emergence  {
+    opacity: 1;
 }
 
 .div-stripe {
@@ -120,40 +123,18 @@ span.navbar-brand:hover img.circle  {
     width: 350px;
 }
 
-/*.container-style {*/
-/*    display: flex;*/
-/*}*/
-
-/*.span-stripe {*/
-/*    display: block;*/
-/*    width: 300px;*/
-/*    height: 200px;*/
-/*    background: url("../images/moscow-2742642_1920.jpg") no-repeat;*/
-/*    transition: 1s ease;*/
-/*    background-size: cover;*/
-/*}*/
-/*span:nth-child(1) {*/
-/*    background-position: 0 0;*/
-/*}*/
-/*span:nth-child(2) {*/
-/*    background-position: -50px 0;*/
-/*}*/
-/*span:nth-child(3) {*/
-/*    background-position: -100px 0;*/
-/*}*/
-/*span:nth-child(4) {*/
-/*    background-position: -150px 0;*/
-/*}*/
-/*span:nth-child(5) {*/
-/*    background-position: -200px 0;*/
-/*}*/
-/*span:nth-child(6) {*/
-/*    background-position: -250px 0;*/
-/*}*/
-/*.figure:hover span {*/
-/*    margin: 0 0.5em;*/
-/*    transform: rotate(10deg);*/
-/*}*/
+@keyframes text {
+    20% {
+        color: bisque;
+    }
+    50%{
+        color: cornflowerblue;
+    }
+    70% {
+        color: burlywood;
+        font-size: 35px;
+    }
+}
 
 .font-size {
     font-size: 10px;
@@ -213,10 +194,20 @@ span.navbar-brand:hover img.circle  {
     font-size: 30px;
 }
 
+.blue {
+    color: cornflowerblue;
+}
+
 a {
     transition: 1s;
 }
 
 .m-t {
     margin-top: 300px;
+}
+
+.form-for-user {
+    margin-top: 100px;
+    color: white;
+    background-color: rgba(100, 100, 100, 0.5);
 }

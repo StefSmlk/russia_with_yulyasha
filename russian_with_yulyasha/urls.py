@@ -17,20 +17,27 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
+from blog.views import blog_view
 from learning.views import learning_view_video, learning_view_photo, photo_comment_view, video_comment_view, \
-    video_delete_comment_view, photo_delete_comment_view
+    video_delete_comment_view, photo_delete_comment_view, video_delete_view, photo_delete_view
+from news.views import news_view
 from russian_with_yulyasha import settings
-from russian_with_yulyasha.views import home_view, contacts_view
+from russian_with_yulyasha.views import home_view, contacts_view, about_view
 
 urlpatterns = [
     path('home', home_view, name='home'),
     path('contacts', contacts_view, name='contacts'),
+    path('about', about_view, name='about'),
+    path('blog', blog_view, name='blog'),
+    path('news', news_view, name='news'),
     path('learning/video', learning_view_video, name='video'),
     path('learning/photo', learning_view_photo, name='photo'),
     path('learning/photo/<int:image_id>', photo_comment_view, name='photo_comments'),
     path('learning/video/<int:video_id>', video_comment_view, name='video_comments'),
     path('learning/video/delete/<int:comment_id>', video_delete_comment_view, name='video_comments_delete'),
     path('learning/photo/delete/<int:comment_id>', photo_delete_comment_view, name='photo_comments_delete'),
+    path('learning/video/delete_v/<int:video_id>', video_delete_view, name='video_delete'),
+    path('learning/photo/delete_p/<int:image_id>', photo_delete_view, name='photo_delete'),
     path('admin/', admin.site.urls),
 ]
 

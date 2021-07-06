@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import Textarea
 
-from learning.models import ImageCommentsModel, VideoCommentsModel
+from learning.models import ImageCommentsModel, VideoCommentsModel, BlogImageModel, BlogVideosModel
 
 
 class CommentsImageForm(forms.ModelForm):
@@ -13,7 +13,7 @@ class CommentsImageForm(forms.ModelForm):
         fields = ('text',)
 
         widgets = {
-            'text': Textarea(attrs={'rows': 5, 'cols': 80}),
+            'text': Textarea(attrs={'rows': 5, 'cols': 60}),
         }
 
 
@@ -26,5 +26,19 @@ class CommentsVideoForm(forms.ModelForm):
         fields = ('text',)
 
         widgets = {
-            'text': Textarea(attrs={'rows': 5, 'cols': 80}),
+            'text': Textarea(attrs={'rows': 5, 'cols': 60}),
         }
+
+
+class AddImageForm(forms.ModelForm):
+
+    class Meta:
+        model = BlogImageModel
+        fields = ('name', 'image', 'description')
+
+
+class AddVideoForm(forms.ModelForm):
+
+    class Meta:
+        model = BlogVideosModel
+        fields = ('name', 'image', 'description')

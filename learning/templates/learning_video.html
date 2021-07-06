@@ -11,30 +11,53 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             {% for object in video.all %}
-              <div class="col">
-                <div class="card card-back">
-                    <div class="container">
-                        <video class="my-video-2" controls="controls">
-                            <source src="{{ object.image.url }}" type="video/mp4">
-                        </video>
+                <div class="col">
+                    <div class="card card-back">
+                        <div class="container">
+                            <video class="my-video-2" controls="controls">
+                                <source src="{{ object.image.url }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card-body text-white">
+                            <p class="card-text text-end font-size">{{ object.date }}</p>
+                            <h5 class="card-title text-center">{{ object.name }}</h5>
+                            <p class="card-text text-center">{{ object.description }}</p>
+                            <hr class="dropdown-divider">
+                            {% for item in comments.all %}
+                                {% ifequal object.name item.video_id %}
+                                    <p>{{ item.text }}
+                                        {% if user.is_authenticated %}
+                                            <span class="text-end"><a href="{% url 'video_comments_delete' item.id %}">delete</a>
+                                            </span>
+                                        {% endif %}
+                                    </p>
+                                    <p class="text-end font-size">{{ item.date_comment }}</p>
+                                {% endifequal %}
+                            {% endfor %}
+                            <div class="text-end"><a href="{% url 'video_comments' object.id %}">
+                                <button class="btn btn-secondary">Add your comment</button>
+                            </a></div>
+                            {% if user.is_authenticated %}
+                                <a href="{% url 'video_delete' object.id %}">
+                                    delete post
+                                </a>
+                            {% endif %}
+                        </div>
                     </div>
-                  <div class="card-body text-white">
-                      <p class="card-text text-end font-size">{{ object.date }}</p>
-                    <h5 class="card-title text-center">{{ object.name }}</h5>
-                    <p class="card-text text-center">{{ object.description }}</p>
-                    <hr class="dropdown-divider">
-                      {% for item in comments.all %}
-                          {% ifequal object.name item.video_id %}
-                              <p class="blue">{{ item.text }} {% if user.is_authenticated %} <span class="text-end"><a href="{% url 'video_comments_delete' item.id %}"> delete </a> </span> {% endif %} </p>
-                              <p class="text-end font-size">{{ item.date_comment }}</p>
-                          {% endifequal %}
-                      {% endfor %}
-                      <div class="text-end"><a href="{% url 'video_comments' object.id %}"><button class="btn btn-secondary">Add your comment</button></a></div>
-                  </div>
                 </div>
-              </div>
             {% endfor %}
         </div>
     </div>
+    {% if user.is_authenticated %}
+        <div class="container form-for-user">
+            <form class="text-center" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                <label class="form-label">
+                    {{ form.as_p }}
+                </label>
+                <button class="btn btn-secondary" type="submit">submit</button>
+            </form>
+        </div>
+    {% endif %}
 
 {% endblock %}

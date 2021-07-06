@@ -1,23 +1,21 @@
 from django.db import models
 
 
-# Create your models here.
-
 class BlogVideosModel(models.Model):
-    name = models.TextField(max_length=100)
-    image = models.FileField(upload_to='files')
-    description = models.TextField(max_length=200)
-    date = models.DateField(auto_created=True)
+    name = models.TextField(default='')
+    image = models.FileField(upload_to='files/')
+    description = models.TextField(default='')
+    date = models.DateField(auto_now=True)
 
     def __str__(self):
         return self.name
 
 
 class BlogImageModel(models.Model):
-    name = models.TextField(max_length=100)
-    image = models.ImageField(upload_to='images')
-    description = models.TextField(max_length=200)
-    date = models.DateField(auto_created=True)
+    name = models.TextField(default='')
+    image = models.ImageField(upload_to='images/')
+    description = models.TextField(default='')
+    date = models.DateField(auto_now=True)
 
     def __str__(self):
         return self.name
