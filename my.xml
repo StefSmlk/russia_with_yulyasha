@@ -6,8 +6,22 @@
         <description>The Moscow Times offers everything you need to know about Russia: Breaking news, top stories, business, analysis, opinion, multimedia, upcoming cultural events</description>
         <atom:link rel="self" href="https://www.themoscowtimes.com/rss/news"></atom:link>
         <language>en-us</language>
-        <lastBuildDate>Wed, 07 Jul 2021 16:07:55 +0200</lastBuildDate>
+        <lastBuildDate>Wed, 07 Jul 2021 20:38:28 +0200</lastBuildDate>
         <ttl>600</ttl>
+					<item>
+				<title>Russia Expels Estonian Consul Over Alleged Espionage</title>
+				<link>https://www.themoscowtimes.com/2021/07/07/russia-expels-estonian-consul-over-alleged-espionage-a74456</link>
+				<description>The FSB security service said it had detained consul Mart Latte while he was receiving classified documents from a Russian national.</description>
+				<pubDate>Wed, 07 Jul 2021 16:28:00 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/07/russia-expels-estonian-consul-over-alleged-espionage-a74456</guid>
+			</item>
+					<item>
+				<title>Famous Faces Join the Race in Russia's High-Stakes Parliamentary Elections</title>
+				<link>https://www.themoscowtimes.com/2021/07/07/famous-faces-join-the-race-in-russias-high-stakes-parliamentary-elections-a74452</link>
+				<description>Well-known figures from Russian entertainment, media and sports are seeking a spot on the ballot.</description>
+				<pubDate>Wed, 07 Jul 2021 16:20:07 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/07/famous-faces-join-the-race-in-russias-high-stakes-parliamentary-elections-a74452</guid>
+			</item>
 					<item>
 				<title>19 Bodies Found From Plane Crash in Far Eastern Russia</title>
 				<link>https://www.themoscowtimes.com/2021/07/07/19-bodies-found-from-plane-crash-in-far-eastern-russia-a74451</link>
@@ -343,20 +357,6 @@
 				<description>Another “undesirable” Khodorkovsky group, Open Russia, disbanded in May to avoid jail sentences for supporters.</description>
 				<pubDate>Thu, 01 Jul 2021 09:18:33 +0200</pubDate>
 				<guid>https://www.themoscowtimes.com/2021/07/01/russia-tags-4-khodorkovsky-linked-ngos-undesirable-a74393</guid>
-			</item>
-					<item>
-				<title>Putin's Phone-In Hit by 'Cyberattacks'</title>
-				<link>https://www.themoscowtimes.com/2021/06/30/putins-phone-in-hit-by-cyberattacks-a74390</link>
-				<description>This year's phone-in repeatedly faced connection problems, particularly during calls from remote regions.</description>
-				<pubDate>Wed, 30 Jun 2021 17:10:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/30/putins-phone-in-hit-by-cyberattacks-a74390</guid>
-			</item>
-					<item>
-				<title>Putin Says Ukraine Is Controlled by Western Leaders</title>
-				<link>https://www.themoscowtimes.com/2021/06/30/putin-says-ukraine-is-controlled-by-western-leaders-a74388</link>
-				<description>An adviser to Ukrainian President Zelenskiy's chief of staff dismissed Putin's claims as a &quot;basic element of Russian propaganda.&quot;</description>
-				<pubDate>Wed, 30 Jun 2021 13:20:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/06/30/putin-says-ukraine-is-controlled-by-western-leaders-a74388</guid>
 			</item>
 			</channel>
 </rss>

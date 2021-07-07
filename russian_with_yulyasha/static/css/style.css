@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .my-card {
@@ -136,7 +137,7 @@ body {
 .emergence {
     opacity: 0;
     transition: 1.5s;
-    font-size: 25px;
+    font-size: 32px;
     animation: text 5s infinite;
 }
 
@@ -186,26 +187,32 @@ span.navbar-brand:hover .emergence  {
 }
 
 .inscription {
-    margin-top: 60px;
+    margin-top: 160px;
     transition: 1s;
-    font-size: 100px;
+    font-size: 60px;
     color: bisque;
 }
 
 .inscription1 {
-    margin-top: 60px;
+    margin-top: 170px;
     transition: 1s;
-    font-size: 80px;
+    font-size: 50px;
     color: bisque;
 }
 
 .inscription2 {
+    margin-top: 150px;
     transition: 1s;
-    font-size: 80px;
+    font-size: 50px;
     color: bisque;
     line-height: 120px;
 }
 
+@media screen and (max-width: 990px) {
+    .inscription1, .inscription, .inscription2 {
+        margin-top: 0;
+    }
+}
 
 .figure:hover .inscription {
     color: cornflowerblue;

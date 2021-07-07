@@ -16,15 +16,26 @@ for (let i = 0; i<list.length; i++){
 }
 
 
-let video = document.getElementById('vid')
-let figure = document.getElementById('figure')
+let video = document.getElementById('vid');
+let figure = document.getElementById('figure');
 
 
 figure.addEventListener('mouseenter', function () {
-    video.play()
+    video.play();
 })
 
 figure.addEventListener('mouseleave', function () {
-    video.pause()
+    video.pause();
 })
 
+
+let cont = document.getElementsByClassName('container');
+
+if($(window).width() < 770){
+    for (let i =0; i < cont.length; i++){
+        if (cont[i].classList.contains('text-end')){
+            cont[i].classList.remove('text-end');
+            cont[i].classList.add('text-center');
+        }
+    }
+}
