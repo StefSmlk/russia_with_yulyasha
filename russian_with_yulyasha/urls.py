@@ -17,18 +17,19 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from blog.views import blog_view
+from blog.views import blog_view, blog_delete_view, blog_wholly_view
 from learning.views import learning_view_video, learning_view_photo, photo_comment_view, video_comment_view, \
     video_delete_comment_view, photo_delete_comment_view, video_delete_view, photo_delete_view
 from news.views import news_view
 from russian_with_yulyasha import settings
-from russian_with_yulyasha.views import home_view, contacts_view, about_view
+from russian_with_yulyasha.views import home_view, about_view
 
 urlpatterns = [
     path('home', home_view, name='home'),
-    path('contacts', contacts_view, name='contacts'),
     path('about', about_view, name='about'),
     path('blog', blog_view, name='blog'),
+    path('blog/delete/<int:blog_id>', blog_delete_view, name='blog_delete'),
+    path('blog/wholly/<int:blog_id>', blog_wholly_view, name='blog_wholly'),
     path('news', news_view, name='news'),
     path('learning/video', learning_view_video, name='video'),
     path('learning/photo', learning_view_photo, name='photo'),

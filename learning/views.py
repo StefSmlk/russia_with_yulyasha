@@ -1,4 +1,3 @@
-from django.db.models.fields.files import FieldFile
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
@@ -10,11 +9,9 @@ def learning_view_video(request):
     context_video = BlogVideosModel.objects
     comments = VideoCommentsModel.objects
     if request.method == 'POST':
-        form = AddVideoForm(request.POST, request.FILES)
+        form = AddVideoForm(request.POST)
         if form.is_valid():
-            new_form = form.save(commit=False)
-            new_form.image = request.FILES['image']
-            new_form.save()
+            form.save()
             return HttpResponseRedirect('/learning/video')
     else:
         form = AddVideoForm()
@@ -83,7 +80,6 @@ def photo_delete_comment_view(request, comment_id):
 def video_delete_view(request, video_id):
     video = BlogVideosModel.objects.get(pk=video_id)
     if request.method == 'POST':
-        video.image.delete()
         video.delete()
         return HttpResponseRedirect('/learning/video')
     return render(request, 'video_delete.html', {'video': video})

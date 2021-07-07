@@ -3,7 +3,7 @@ from django.db import models
 
 class BlogVideosModel(models.Model):
     name = models.TextField(default='')
-    image = models.FileField(upload_to='files/')
+    image = models.CharField(max_length=200)
     description = models.TextField(default='')
     date = models.DateField(auto_now=True)
 

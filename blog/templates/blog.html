@@ -8,4 +8,52 @@
 {% endblock %}
 {% block content %}
 
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for object in context.all %}
+                <div class="col some">
+                    <div class="my-card">
+                        <div class="front">
+                            <a href="{% url 'blog_wholly' object.id %}">
+                                <img src="{{ object.image.url }}" class="card-img-top" alt="...">
+                            </a>
+                            <p class="card-text text-end font-size text-white">{{ object.date }}</p>
+                        </div>
+                        <div class="back">
+                            <div class="text-white">
+                                {% if user.is_authenticated %}
+                                    <a href="{% url 'blog_delete' object.id %}">
+                                        delete post
+                                    </a>
+                                {% endif %}
+                            <a href="{% url 'blog_wholly' object.id %}" class="text-decoration-none">
+                                <h5 class="card-title text-center">{{ object.name }}</h5>
+                                <p class="card-text text-center overflow-hidden">{{ object.description }}</p>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    {% if user.is_authenticated %}
+        <div class="container form-for-user">
+            <form class="text-center" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                <label class="form-label">
+                    {{ form.as_p }}
+                </label>
+                <button class="btn btn-secondary" type="submit">submit</button>
+            </form>
+        </div>
+    {% endif %}
+
 {% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Photo comment delete
+{% endblock %}
+{% block body %}
+    {% static 'images/filler-3958737_1920.jpg' %}
+{% endblock %}
+{% block content %}
+
+    <div class="container text-center card-back spec text-white">
+        <br>
+        <img src="{{ blog.image.url }}" class="card-img-top" alt="...">
+        <p class="card-text text-end font-size">{{ blog.date }}</p>
+        <h5 class="card-title text-center">{{ blog.name }}</h5>
+        <p class="card-text text-center">{{ blog.description }}</p>
+    </div>
+
+{% endblock %}

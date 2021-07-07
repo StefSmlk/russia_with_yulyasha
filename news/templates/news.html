@@ -7,5 +7,37 @@
     {% static 'images/laptop-3174729_1920.jpg' %}
 {% endblock %}
 {% block content %}
+    <div class="container form-for-news text-white text-center">
+        <span class="hidden-brackets">
+        {{ news|safe }}
+        </span>
+        <a href="{{ link }}" class="text-decoration-none">
+            <h1>{{ text_main }}</h1>
+            <p>{{ text }}</p>
+            <br>
+        </a>
+    </div>
 
+    <div class="container text-center text-white">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for item in list %}
+
+                <div class="col">
+                    <div class="card card-back">
+                    <span class="hidden-brackets">
+                        {{ item.1|safe }}
+                    </span>
+                        <a href="{{ item.0 }}" class="text-decoration-none">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ item.2 }}</h5>
+                            <p class="card-text">{{ item.3 }}</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+    <script src="{% static 'JS/jsForNews.js' %}"></script>
 {% endblock %}

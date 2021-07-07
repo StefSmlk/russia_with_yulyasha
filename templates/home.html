@@ -73,9 +73,10 @@
     </div>
 
     <div class="container text-center">
-        <video controls class="my-video"
-               src="{% static 'video/Russian with Yulyasha. Lesson 1. Basic phrases and more!.mp4' %}">
-        </video>
+        <iframe class="my-video" src="https://www.youtube.com/embed/oV0eurre_9w" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
     </div>
 
     <br>
@@ -183,30 +184,5 @@
         </a>
     </div>
 
-    <br>
-    <br>
-    <br>
-
-    <div class="container text-center">
-        <a class="text-decoration-none" href="{% url 'contacts' %}">
-            <div class="row justify-content-around figure">
-                <div class="col-md-5">
-                    <div class="container div-stripe transform">
-                        <img width="300px" src="{% static 'images/phone-690091_1920.jpg' %}" alt="...">
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-md-5 inscription">
-                    contacts
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
     <script src="{% static 'JS/javaScript.js' %}"></script>
 {% endblock %}
