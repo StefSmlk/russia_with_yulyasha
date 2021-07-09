@@ -10,7 +10,7 @@
 {% block content %}
 
     <div class="container">
-        <div class="card mb-3 card-back">
+        <div class="card mb-3 card-back text-center">
           <img src="{{ photo.image.url }}" class="card-img-top" alt="...">
           <div class="card-body text-white">
               <p class="card-text text-end font-size">{{ photo.date }}</p>
@@ -24,6 +24,8 @@
                   <button class="btn btn-secondary" type="submit">submit</button>
               </form>
           </div>
+            <br>
+            <a class="text-decoration-none" href="{% url 'photo' %}"><i class="fas fa-undo-alt"></i>&nbsp;Return</a>
         </div>
     </div>
 
