@@ -16,7 +16,7 @@
                         {% csrf_token %}
                         <label>
                             <video class="my-video-2" controls="controls">
-                                <source src="{{ video.image.url }}" type="video/mp4">
+                                <source src="{{ video.image }}" type="video/mp4">
                             </video>
                         </label>
                         {% if user.is_authenticated %}

@@ -13,7 +13,7 @@ class BlogVideosModel(models.Model):
 
 class BlogImageModel(models.Model):
     name = models.TextField(default='')
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images')
     description = models.TextField(default='')
     date = models.DateField(auto_now=True)
 
