@@ -22,10 +22,11 @@ from learning.views import learning_view_video, learning_view_photo, photo_comme
     video_delete_comment_view, photo_delete_comment_view, video_delete_view, photo_delete_view
 from news.views import news_view
 from russian_with_yulyasha import settings
-from russian_with_yulyasha.views import home_view, about_view
+from russian_with_yulyasha.views import home_view, about_view, map_view
 
 urlpatterns = [
     path('home', home_view, name='home'),
+    path('map', map_view, name='map'),
     path('about', about_view, name='about'),
     path('blog', blog_view, name='blog'),
     path('blog/delete/<int:blog_id>', blog_delete_view, name='blog_delete'),

@@ -14,6 +14,9 @@
         <p class="card-text text-end font-size">{{ blog.date }}</p>
         <h5 class="card-title text-center">{{ blog.name }}</h5>
         <p class="card-text text-center">{{ blog.description }}</p>
+        <br>
+        <br>
+        <a class="text-decoration-none" href="{% url 'blog' %}"><i class="fas fa-undo-alt"></i>&nbsp;Return</a>
     </div>
 
 {% endblock %}

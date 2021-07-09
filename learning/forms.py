@@ -5,28 +5,32 @@ from learning.models import ImageCommentsModel, VideoCommentsModel, BlogImageMod
 
 
 class CommentsImageForm(forms.ModelForm):
+    nick_name = ImageCommentsModel.nick_name
     image_id = ImageCommentsModel.image_id
     text = ImageCommentsModel.text
 
     class Meta:
         model = ImageCommentsModel
-        fields = ('text',)
+        fields = ('nick_name', 'text')
 
         widgets = {
-            'text': Textarea(attrs={'rows': 5, 'cols': 60}),
+            'text': Textarea(attrs={'rows': 5, 'placeholder': 'comment...'}),
+            'nick_name': Textarea(attrs={'rows': 1, 'placeholder': 'Please, enter your name'}),
         }
 
 
 class CommentsVideoForm(forms.ModelForm):
+    nick_name = VideoCommentsModel.nick_name
     video_id = VideoCommentsModel.video_id
     text = VideoCommentsModel.text
 
     class Meta:
         model = VideoCommentsModel
-        fields = ('text',)
+        fields = ('nick_name', 'text')
 
         widgets = {
-            'text': Textarea(attrs={'rows': 5, 'cols': 60}),
+            'text': Textarea(attrs={'rows': 5, 'placeholder': 'comment...'}),
+            'nick_name': Textarea(attrs={'rows': 1, 'placeholder': 'Please, enter your name'}),
         }
 
 

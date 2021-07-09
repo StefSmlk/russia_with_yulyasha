@@ -8,6 +8,10 @@ from learning.models import BlogVideosModel, BlogImageModel, ImageCommentsModel,
 def learning_view_video(request):
     context_video = BlogVideosModel.objects
     comments = VideoCommentsModel.objects
+    last_comments = []
+    for comment in comments.all():
+        temp_comment = comment
+        last_comments.insert(0, temp_comment)
     if request.method == 'POST':
         form = AddVideoForm(request.POST)
         if form.is_valid():
@@ -15,12 +19,21 @@ def learning_view_video(request):
             return HttpResponseRedirect('/learning/video')
     else:
         form = AddVideoForm()
-    return render(request, 'learning_video.html', {'video': context_video, 'comments': comments, 'form': form})
+    return render(request, 'learning_video.html', {
+        'video': context_video,
+        'comments': comments,
+        'form': form,
+        'item': last_comments[:3]
+    })
 
 
 def learning_view_photo(request):
     context_photo = BlogImageModel.objects
     comments = ImageCommentsModel.objects
+    last_comments = []
+    for comment in comments.all():
+        temp_comment = comment
+        last_comments.insert(0, temp_comment)
     if request.method == 'POST':
         form = AddImageForm(request.POST, request.FILES)
         if form.is_valid():
@@ -30,7 +43,12 @@ def learning_view_photo(request):
             return HttpResponseRedirect('/learning/photo')
     else:
         form = AddImageForm()
-    return render(request, 'learning_photo.html', {'photo': context_photo, 'comments': comments, 'form': form})
+    return render(request, 'learning_photo.html', {
+        'photo': context_photo,
+        'comments': comments,
+        'form': form,
+        'item': last_comments[:3]
+    })
 
 
 def photo_comment_view(request, image_id):

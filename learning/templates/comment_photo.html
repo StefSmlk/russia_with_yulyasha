@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block title %}
     Comment photo
@@ -17,9 +18,9 @@
               <p class="card-text text-center">{{ photo.description }}</p>
               <form class="text-center" method="post">
                   {% csrf_token %}
-                  <label>
-                      {{ form }}
-                  </label>
+                  <div class="container">
+                  {{ form|crispy }}
+                  </div>
                   <button class="btn btn-secondary" type="submit">submit</button>
               </form>
           </div>

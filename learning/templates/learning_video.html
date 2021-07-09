@@ -24,18 +24,57 @@
                             <h5 class="card-title text-center">{{ object.name }}</h5>
                             <p class="card-text text-center">{{ object.description }}</p>
                             <hr class="dropdown-divider">
-                            {% for item in comments.all %}
-                                {% ifequal object.name item.video_id %}
-                                    <p>{{ item.text }}
-                                        {% if user.is_authenticated %}
-                                            <span class="text-end"><a href="{% url 'video_comments_delete' item.id %}">delete</a>
-                                            </span>
-                                        {% endif %}
-                                    </p>
-                                    <p class="text-end font-size">{{ item.date_comment }}</p>
+                            {% if item.2 %}
+                                {% ifequal item.2.name item.image_id %}
+                                    <p class="text-center font-size">{{ item.2.nick_name }}</p>
+                                    <p>{{ item.2.text }}</p>
+                                    <p class="text-end font-size">{{ item.2.date_comment }}</p>
                                 {% endifequal %}
-                            {% endfor %}
-                            <div class="text-end"><a href="{% url 'video_comments' object.id %}">
+                            {% endif %}
+                            {% if item.1 %}
+                                {% ifequal item.1.name item.image_id %}
+                                    <p class="text-center font-size">{{ item.1.nick_name }}</p>
+                                    <p>{{ item.1.text }}</p>
+                                    <p class="text-end font-size">{{ item.1.date_comment }}</p>
+                                {% endifequal %}
+                            {% endif %}
+                            {% if item.0 %}
+                                {% ifequal item.0.name item.image_id %}
+                                    <p class="text-center font-size">{{ item.0.nick_name }}</p>
+                                    <p>{{ item.0.text }}</p>
+                                    <p class="text-end font-size">{{ item.0.date_comment }}</p>
+                                {% endifequal %}
+                            {% endif %}
+
+                            <div id="popup" class="popup">
+                                <a class="popup-area" href="#header"></a>
+                                <div class="popup-body">
+                                    <div class="popup-content">
+                                        <a class="popup-close" href="#header"><i class="fas fa-times-circle"></i></a>
+                                        <div class="popup-text">
+                                            {% for item in comments.all %}
+                                                {% ifequal object.name item.video_id %}
+                                                    <p class="text-center font-size">{{ item.nick_name }}</p>
+                                                    <p>{{ item.text }}
+                                                        {% if user.is_authenticated %}
+                                                            <span class="text-end"><a href="{% url 'video_comments_delete' item.id %}">delete</a>
+                                                            </span>
+                                                        {% endif %}
+                                                    </p>
+                                                    <p class="text-end font-size">{{ item.date_comment }}</p>
+                                                {% endifequal %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-end">
+                                <span class="text-start">
+                                    <a class="text-decoration-none" href="#popup">
+                                        <button class="btn btn-secondary">Show all</button>
+                                    </a>
+                                </span><a href="{% url 'video_comments' object.id %}">
                                 <button class="btn btn-secondary">Add your comment</button>
                             </a></div>
                             {% if user.is_authenticated %}
@@ -43,6 +82,7 @@
                                     delete post
                                 </a>
                             {% endif %}
+
                         </div>
                     </div>
                 </div>

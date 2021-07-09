@@ -22,12 +22,14 @@ class BlogImageModel(models.Model):
 
 
 class ImageCommentsModel(models.Model):
+    nick_name = models.TextField(default='', verbose_name='')
     image_id = models.TextField(default='')
     text = models.TextField(verbose_name='')
     date_comment = models.DateField(auto_now=True)
 
 
 class VideoCommentsModel(models.Model):
+    nick_name = models.TextField(default='', verbose_name='')
     video_id = models.TextField(default='')
     text = models.TextField(verbose_name='')
     date_comment = models.DateField(auto_now=True)
