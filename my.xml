@@ -6,8 +6,29 @@
         <description>The Moscow Times offers everything you need to know about Russia: Breaking news, top stories, business, analysis, opinion, multimedia, upcoming cultural events</description>
         <atom:link rel="self" href="https://www.themoscowtimes.com/rss/news"></atom:link>
         <language>en-us</language>
-        <lastBuildDate>Fri, 09 Jul 2021 13:46:03 +0200</lastBuildDate>
+        <lastBuildDate>Fri, 09 Jul 2021 14:56:12 +0200</lastBuildDate>
         <ttl>600</ttl>
+					<item>
+				<title>Russia Proposes Foreigner Residence Permit Overhaul </title>
+				<link>https://www.themoscowtimes.com/2021/07/09/russia-proposes-foreigner-residence-permit-overhaul-a74477</link>
+				<description>The bill, which is still in development, could help ease Russia's migrant worker shortage by allowing foreigners to receive short-term residency.</description>
+				<pubDate>Fri, 09 Jul 2021 14:32:00 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/09/russia-proposes-foreigner-residence-permit-overhaul-a74477</guid>
+			</item>
+					<item>
+				<title>Coronavirus in Russia: The Latest News | July 9</title>
+				<link>https://www.themoscowtimes.com/2021/07/09/coronavirus-in-russia-the-latest-news-july-9-a69117</link>
+				<description>Record-setting deaths. Moscow cases soar. Mandatory vaccination.</description>
+				<pubDate>Fri, 09 Jul 2021 14:28:00 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/09/coronavirus-in-russia-the-latest-news-july-9-a69117</guid>
+			</item>
+					<item>
+				<title>Russia’s Black Sea Resorts to Require Tourists to Vaccinate</title>
+				<link>https://www.themoscowtimes.com/2021/07/09/russias-southern-resorts-to-vaccinate-tourists-a74479</link>
+				<description>Starting Aug. 1, tourists will be required to get vaccinated against Covid-19 within three days of arriving in the Krasnodar region.</description>
+				<pubDate>Fri, 09 Jul 2021 14:24:08 +0200</pubDate>
+				<guid>https://www.themoscowtimes.com/2021/07/09/russias-southern-resorts-to-vaccinate-tourists-a74479</guid>
+			</item>
 					<item>
 				<title>All 28 Bodies Found From Far East Russia Plane Crash</title>
 				<link>https://www.themoscowtimes.com/2021/07/09/all-28-bodies-found-from-far-east-russia-plane-crash-a74476</link>
@@ -35,13 +56,6 @@
 				<description>The Moscow Times investigated a deal between Russia and a minor Dubai royal to supply poor countries with Sputnik V — at high prices.</description>
 				<pubDate>Fri, 09 Jul 2021 10:01:00 +0200</pubDate>
 				<guid>https://www.themoscowtimes.com/2021/07/09/a-royal-mark-up-how-an-emirati-sheikh-resells-millions-of-russian-vaccines-to-the-developing-world-a74461</guid>
-			</item>
-					<item>
-				<title>Coronavirus in Russia: The Latest News | July 9</title>
-				<link>https://www.themoscowtimes.com/2021/07/09/coronavirus-in-russia-the-latest-news-july-9-a69117</link>
-				<description>Record-setting deaths. Moscow cases soar. Mandatory vaccination.</description>
-				<pubDate>Fri, 09 Jul 2021 09:00:00 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/07/09/coronavirus-in-russia-the-latest-news-july-9-a69117</guid>
 			</item>
 					<item>
 				<title>Russia Proposes Six-Month Extension of Syria Cross-Border Aid: UN Sources</title>
@@ -343,20 +357,6 @@
 				<description>Russia is battling the surging Delta variant.</description>
 				<pubDate>Sat, 03 Jul 2021 12:43:00 +0200</pubDate>
 				<guid>https://www.themoscowtimes.com/2021/07/03/russia-reports-record-covid-deaths-for-fifth-straight-day-a74417</guid>
-			</item>
-					<item>
-				<title>Arctic Ocean’s ‘Last Ice Area’ Disappearing Faster Than Expected – Study</title>
-				<link>https://www.themoscowtimes.com/2021/07/02/arctic-oceans-last-ice-area-disappearing-faster-than-expected-study-a74415</link>
-				<description>The oldest, thickest Arctic sea ice known as the “Last Ice Area” is melting faster than anticipated as the earth warms, scientists wrote.</description>
-				<pubDate>Fri, 02 Jul 2021 16:47:57 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/07/02/arctic-oceans-last-ice-area-disappearing-faster-than-expected-study-a74415</guid>
-			</item>
-					<item>
-				<title>Russian Governors’ Approvals Drop as Kremlin Distances From Virus Response – Poll</title>
-				<link>https://www.themoscowtimes.com/2021/07/02/russian-governors-approvals-drop-as-kremlin-distances-from-virus-response-poll-a74413</link>
-				<description>Russia's regions have been tasked with taking unpopular measures like mandatory vaccinations during the latest Covid-19 surge.</description>
-				<pubDate>Fri, 02 Jul 2021 16:15:35 +0200</pubDate>
-				<guid>https://www.themoscowtimes.com/2021/07/02/russian-governors-approvals-drop-as-kremlin-distances-from-virus-response-poll-a74413</guid>
 			</item>
 			</channel>
 </rss>

@@ -23,7 +23,7 @@ from news.views import news_view
 from russian_with_yulyasha.views import home_view, about_view, map_view
 
 urlpatterns = [
-    path('home', home_view, name='home'),
+    path('', home_view, name='home'),
     path('map', map_view, name='map'),
     path('about', about_view, name='about'),
     path('blog', blog_view, name='blog'),
