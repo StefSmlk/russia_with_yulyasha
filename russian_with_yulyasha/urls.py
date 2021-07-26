@@ -19,7 +19,7 @@ from django.urls import path
 from blog.views import blog_view, blog_delete_view, blog_wholly_view
 from learning.views import learning_view_video, learning_view_photo, photo_comment_view, video_comment_view, \
     video_delete_comment_view, photo_delete_comment_view, video_delete_view, photo_delete_view
-from news.views import news_view
+from news.views import news_view, news_detail_view, main_news_detail_view
 from russian_with_yulyasha.views import home_view, about_view, map_view
 
 urlpatterns = [
@@ -30,6 +30,8 @@ urlpatterns = [
     path('blog/delete/<int:blog_id>', blog_delete_view, name='blog_delete'),
     path('blog/wholly/<int:blog_id>', blog_wholly_view, name='blog_wholly'),
     path('news', news_view, name='news'),
+    path('news/<int:news_id>', news_detail_view, name='news_detail'),
+    path('news/main', main_news_detail_view, name='main_news_detail'),
     path('learning/video', learning_view_video, name='video'),
     path('learning/photo', learning_view_photo, name='photo'),
     path('learning/photo/<int:image_id>', photo_comment_view, name='photo_comments'),

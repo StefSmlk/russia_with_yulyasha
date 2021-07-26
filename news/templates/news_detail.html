@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    News Page
+{% endblock %}
+{% block body %}
+    {% static 'images/laptop-3174729_1920.jpg' %}
+{% endblock %}
+{% block content %}
+
+    <div class="container form-for-news text-white text-center">
+            <img src="{{ list.0 }}" alt="..." width="100%" style="max-width: 1000px;">
+            <h1 class="card-title">{{ list.1 }}</h1>
+        {% for item in list.2 %}
+            <p class="card-text text-start">{{ item }}</p>
+        {% endfor %}
+            <p class="text-end">(The Moscow Times)</p>
+            <br>
+            <a class="text-decoration-none" href="{% url 'news' %}"><i class="fas fa-undo-alt"></i>&nbsp;Return</a>
+    </div>
+
+{% endblock %}

@@ -19,20 +19,20 @@
 </head>
 
 <body style="background-image: url({% block body %}{% endblock %});">
-<nav id="header" class="container navbar navbar-expand-lg navbar-dark fixed-top">
+<nav id="header" class="container navbar navbar-expand-lg navbar-dark fixed-top" style="flex-wrap: nowrap;">
     <div class="container-fluid">
         <span class="navbar-brand text-center"><a class="text-decoration-none" href="{% url 'home' %}"><img
                 src="{% static 'images/log.png' %}" class="circle" alt="...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="emergence fst-italic">Home Page</span>
         </a></span>
-        <span class="text-end d-block">
+        <span class="text-end">
                         <a href="https://instagram.com/russia_wide?utm_medium=copy_link" class="text-decoration-none"><i
                                 class="fab fa-instagram fa-2x">&nbsp;&nbsp;</i></a>
                         <a href="https://www.youtube.com/channel/UCrk2nNOje_qza0rrpJe5i0g" class="text-decoration-none"><i
                                 class="fab fa-youtube fa-2x">&nbsp;&nbsp;</i></a>
-                        <a href="https://vk.com/public201817013" class="text-decoration-none"><i
-                                class="fab fa-vk fa-2x"></i></a>
-                    </span>
+                        <a href="" class="text-decoration-none"><i
+                                class="fab fa-facebook-square fa-2x"></i></a>
+        </span>
     </div>
 </nav>
 

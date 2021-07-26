@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Gill Sans, sans-serif;
 }
 
 .my-card {
@@ -140,6 +140,12 @@ body {
     transition: 1.5s;
     font-size: 32px;
     animation: text 5s infinite;
+}
+
+@media screen and (max-width: 500px){
+    .emergence {
+        display: none;
+    }
 }
 
 span.navbar-brand:hover img.circle  {
